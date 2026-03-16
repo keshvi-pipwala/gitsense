@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #1e293b; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #475569; }
+}
+
+@layer components {
+  .card {
+    @apply bg-bg-secondary border border-bg-tertiary rounded-xl p-5;
+  }
+  .badge-risk-low { @apply bg-risk-low/15 text-risk-low border border-risk-low/30 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-risk-medium { @apply bg-risk-medium/15 text-risk-medium border border-risk-medium/30 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-risk-high { @apply bg-risk-high/15 text-risk-high border border-risk-high/30 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-risk-critical { @apply bg-red-950/50 text-red-400 border border-red-500/30 text-xs font-semibold px-2.5 py-0.5 rounded-full animate-pulse; }
+  .btn-primary { @apply bg-accent hover:bg-accent-hover text-white font-semibold px-4 py-2 rounded-lg transition-all duration-150 disabled:opacity-50; }
+  .btn-ghost { @apply bg-transparent border border-bg-tertiary hover:border-accent/50 text-slate-300 hover:text-white font-medium px-4 py-2 rounded-lg transition-all duration-150; }
+  .skeleton { @apply bg-bg-tertiary animate-pulse rounded; }
+}
+
+.glow-accent { box-shadow: 0 0 20px rgba(99,102,241,0.2); }
+.glow-high { box-shadow: 0 0 20px rgba(239,68,68,0.2); }
+
+/* Gauge animation */
+@keyframes gauge-fill {
+  from { stroke-dashoffset: 220; }
+  to { stroke-dashoffset: var(--target-offset); }
+}
+.gauge-arc { animation: gauge-fill 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }

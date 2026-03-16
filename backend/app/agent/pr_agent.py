@@ -164,7 +164,7 @@ def run_claude_analysis(
     """Run the full Gemini multi-step analysis."""
     genai.configure(api_key=settings.GOOGLE_API_KEY)
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.5-flash",
         system_instruction=SYSTEM_PROMPT,
         generation_config=genai.GenerationConfig(
             temperature=0.2,

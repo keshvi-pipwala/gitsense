@@ -1,4 +1,4 @@
-# 🧠 GitSense — Autonomous AI Agent for Codebase Intelligence
+#  GitSense — Autonomous AI Agent for Codebase Intelligence
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -30,7 +30,7 @@ Then it goes back to watching.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -116,7 +116,7 @@ Now open a PR and watch GitSense analyze it live on the Events page.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 gitsense/
@@ -174,7 +174,7 @@ gitsense/
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 Full interactive docs available at `http://localhost:8000/docs`
 
@@ -194,7 +194,7 @@ Full interactive docs available at `http://localhost:8000/docs`
 
 ---
 
-## 🛡️ Security
+##  Security
 
 - **Webhook signature verification**: Every incoming GitHub webhook is verified via HMAC-SHA256
 - **No secrets in code**: All credentials via environment variables
@@ -203,7 +203,7 @@ Full interactive docs available at `http://localhost:8000/docs`
 
 ---
 
-## 🎯 Skills Demonstrated
+##  Skills Demonstrated
 
 This project was built to showcase production-level engineering across multiple domains:
 
@@ -252,12 +252,12 @@ This project was built to showcase production-level engineering across multiple 
 
 ---
 
-## 📊 Dashboard Screenshots
+##  Dashboard Screenshots
 
 *[Screenshots would be placed here in a deployed project — the dashboard features a dark mode health gauge, real-time event stream showing agent processing steps, filterable PR intelligence feed with risk badges, and file hotspot heatmaps.]*
 
 ---
 
-## 📝 License
+##  License
 
-MIT
+MIT License
